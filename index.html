@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Vue Hello</title>
+</head>
+<body>
+ 
+    <div id="app">
+        <div class="container">
+            <h1 class="margin_bottom">{{ saluto }}</h1>
+            <p class="margin_bottom" v-model="description"> {{ description }}</p>
+            <img class="margin_bottom" v-bind:src="image" alt="">
+            <img v-bind:src="other_image" alt="">
+        </div>
+    </div>
+
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
